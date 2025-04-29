@@ -69,7 +69,6 @@ export default function ViewBookings() {
                 <br></br>
                 <br></br>
                 <br></br>
-                <br></br>
                 <h2>Installation Bookings:</h2>
                 {viewInstallation.length > 0 ? (
                     <ul>
