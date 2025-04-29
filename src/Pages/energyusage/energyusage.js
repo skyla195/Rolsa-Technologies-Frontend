@@ -33,7 +33,7 @@ export default function EnergyUsage() {
         }
 
         try{
-            const response = await axios.post('http://127.0.0.1:8001/Auth/Calculate-Energy-Usage', userenergyData)
+            const response = await axios.post('https://rolsa-technologies-backend.onrender.com/Auth/Calculate-Energy-Usage', userenergyData)
             setMessage(`Your Energy Usage for ${month} is ${energyUsage.toFixed(2)} Kwh`)
 
         }catch(error){
