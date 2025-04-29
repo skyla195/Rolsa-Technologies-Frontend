@@ -42,14 +42,15 @@
              align-items: center;
              gap: 60px;
               border: 2px solid green;
+              height: 100px;
  
              >img{
-                 width: 180px;
+                 width: 50px;
                   border: 2px solid purple;
              }
  
              >p{
-                 width: 530px;
+                 width: 300px;
                  font-size: clamp(14px, 2vw, 18px);
                   border: 2px solid darkgrey;
              }
