@@ -1,0 +1,174 @@
+#sch-consultation-div {
+    display: flex;
+    padding-left: 50px;
+    margin-top: 80px;
+    width: fit-content;
+
+    >img {
+        width: 100%;
+        max-width: 500px;
+        padding-right: 50px;
+    }
+
+    >#div-info-title-con {
+        text-align: end;
+        margin-right: 50px;
+        width: 100%;
+
+        >h1 {
+            font-weight: 500;
+            text-decoration: underline;
+            font-size: clamp(20px, 4vw, 25px);
+
+        }
+
+        >p {
+            display: flex;
+            justify-self: end;
+            font-size: clamp(14px, 3vw, 18px);
+
+        }
+    }
+
+}
+
+#sch-installation-div {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 50px;
+    margin-top: 80px;
+    width: fit-content;
+
+    >img {
+        width: 100%;
+        max-width: 500px;
+        padding-right: 50px;
+    }
+
+    >#div-info-title-ins {
+        text-align: start;
+        margin-right: 50px;
+        width: 100%;
+
+        >h1 {
+            font-weight: 500;
+            text-decoration: underline;
+            font-size: clamp(20px, 4vw, 25px);
+
+        }
+
+        >p {
+            display: flex;
+            justify-self: start;
+            font-size: clamp(14px, 3vw, 18px);
+
+        }
+    }
+
+}
+
+#SCI-steps {
+    margin-top: 190px;
+
+    >h1 {
+        font-weight: 500;
+        text-decoration: underline;
+        font-size: clamp(20px, 4vw, 25px);
+
+    }
+
+}
+
+#SCI-steps-circles {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-self: center;
+    gap: 50px;
+
+    margin-top: 10px;
+
+    >.SCI-steps-circle {
+
+        >img {
+            width: fit-content;
+            max-width: 150px;
+            height: fit-content;
+            border-radius: 100px;
+        }
+
+        >p {
+            font-size: clamp(12px, 3vw, 16px);
+        }
+    }
+}
+
+#SCI-buttons {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .SCI-button {
+        width: 100%;
+        max-width: 300px;
+        border: none;
+        height: 60px;
+        border-radius: 20px;
+        font-size: clamp(16px, 4vw, 20px);
+
+        >a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .SCI-button.yellow{
+        background-color: var(--yellow-color);
+        box-shadow: 0px 0px 15px var(--yellow-color);
+    }
+
+    .SCI-button.green{
+        background-color: var(--green-color);
+        box-shadow: 0px 0px 15px var(--green-color);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #sch-consultation-div,
+    #sch-installation-div {
+        flex-direction: column;
+        align-items: center;
+
+        >#div-info-title-con,
+        #div-info-title-ins {
+            text-align: center;
+
+            >p {
+                display: flex;
+                justify-self: end;
+
+            }
+        }
+    }
+
+    #SCI-steps-circles {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    #SCI-steps-circles {
+        grid-template-columns: 1fr;
+    }
+
+    #SCI-buttons{
+        flex-direction: column;
+        gap: 50px;
+        justify-self: center;
+    }
+}

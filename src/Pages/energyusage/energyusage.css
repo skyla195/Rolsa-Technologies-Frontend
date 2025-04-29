@@ -1,0 +1,53 @@
+#energy-usage-div{
+    margin-top: 210px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    max-width: 1000px;
+    align-items: center;
+
+    gap: 50px;
+    justify-self: center;
+
+
+    .energy-usage-question{
+
+        font-size: clamp(16px, 3vw, 20px);
+
+        
+    }
+
+    >input{
+        width: 90%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        
+    }
+
+}
+
+#energy-usage-button{
+    margin-top: 135px;
+    width: 100%;
+    max-width: 300px;
+
+    font-size: clamp(16px, 3vw, 20px);
+    height: 60px;
+    border-radius: 20px;
+
+    background-color: var(--green-color);
+    border: none;
+    box-shadow: 0px 0px 15px var(--green-color);
+
+    cursor: pointer;
+}
+
+#energy-usage-results{
+    margin-top: 100px;
+    >h2{
+        font-weight: 500;
+    }
+}

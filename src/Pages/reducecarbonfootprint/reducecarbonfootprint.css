@@ -1,0 +1,86 @@
+#reduce-cf-info{
+    margin-top: 120px;
+    >.info-div{
+        
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        >p{
+            max-width: 1100px;
+            text-align: start;
+
+            padding: 30px 15px 30px 15px;
+            margin: 0px 20px 0px 20px;
+            border-radius: 20px;
+
+            font-size: clamp(14px, 2vw, 18px);
+            
+        }
+    }
+
+    >.info-div.yellow{
+        >p{
+            background-color: var(--yellow-color);
+            box-shadow: 0px 0px 15px var(--yellow-color);
+            width: 100%;
+        }
+    }
+
+    >.info-div.green{
+        >p{
+            background-color: var(--green-color);
+            box-shadow: 0px 0px 15px var(--green-color);
+            width: 100%;
+        }
+    }
+}
+
+#CF-button-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+
+    justify-self: center;
+    gap:260px;
+    margin-top:300px;
+
+    >p{
+        text-align: start;
+        width: 470px;
+        font-size: clamp(14px, 2vw, 18px);
+        
+    }
+
+    >button{
+        border: none;
+        width: 370px;
+        background-color: var(--green-color);
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px var(--green-color);
+        font-size: clamp(16px, 3vw, 20px);
+        cursor: pointer;
+
+        >a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #CF-button-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        
+
+        >p{
+            margin: 0px 20px 0px 20px;
+        }
+
+        >button{
+            height: 50px;
+        }
+    }
+}

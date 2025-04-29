@@ -1,0 +1,57 @@
+footer{
+    margin-top: 270px;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    #footer-line{
+    
+        border-top: 5px solid var(--text-color);
+        border-radius: 5px;
+
+        width: 100%;
+        max-width: 1100px;
+        margin-bottom: 60px;
+        
+    }
+
+    #footer-space-div{
+        width: 100%;
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 110px;
+
+        >#footer-div{
+            width: 100%;
+            /* padding used to move the logo to the left and not align with the footer line end */
+            padding: 0px 0px 0px 50px;
+            max-width: 300px;
+            /* max-width above is requireed to give a maxmium width for the logo for desktop screen size */
+            
+            align-self: center;
+            >img{
+                /* max-width requireed to maintain the width of the logo for mobile screen size */
+                max-width:100%; 
+                
+            }
+        }
+
+        >#footer-links{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            text-align: end;
+            gap: 15px;
+            >a{
+                text-decoration: none;
+                color: var(--text-color);
+                font-size: clamp(10px, 4vw, 15px)
+            }
+        }
+    }
+}
+

@@ -1,0 +1,119 @@
+#nav-bar{
+    width: 100%;
+    background-color: var(--background-color);
+
+    position:fixed;
+    z-index: 1;
+    display: flex;
+    top: 0;
+    
+    justify-content: space-between;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+
+    #menu-icon{
+        width:50px;
+        margin-left: 50px;
+        position: relative;
+        height: fit-content;
+        align-self: center;
+    }
+
+    #nav-bar-links.open{
+        display: flex;
+    }
+
+
+
+    #nav-bar-links{
+        display: none;
+       
+        flex-direction: column;
+        text-align: start;
+        position: absolute;
+        top: 120px;
+        left: 0px;
+
+        background-color: var(--background-color);
+        padding: 40px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        gap: 10px;
+        >a{
+            text-decoration: none;
+            font-size: clamp(16px, 4vw, 20px);
+            color: var(--text-color);
+            
+        }
+
+    }
+
+    #logo{
+        width: 200px;
+        padding: 5px;
+    }
+
+    #nav-bar-buttons{
+        display: flex;
+        height: fit-content;
+        align-self: center;
+
+        margin-right: 20px;
+        gap: 20px;
+        width: fit-content;
+
+        #desktop-button-links{
+            padding: 10px 30px 10px 30px;
+
+            border-radius: 15px;
+            background-color: var(--yellow-color);
+ 
+
+            >a{
+                text-decoration: none;
+                color: var(--text-color);
+            }
+        }
+    }
+
+    #mobile-bar-buttons{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+
+        #mobile-button-links{
+            padding: 10px 20px 10px 20px;
+
+            width: fit-content;
+            
+
+            border-radius: 15px;
+            background-color: var(--yellow-color);
+
+            >a{
+                
+                text-decoration: none;
+                font-size: clamp(16px, 4vw, 20px);
+                color: var(--text-color);
+                
+            }
+        }
+        
+        
+        
+        
+    }
+}
+
+@media (max-width:1200px){
+    #nav-bar{
+        #nav-bar-buttons{
+            display: none;
+        }
+        #mobile-bar-buttons{
+            display: flex;
+        }
+    }
+
+}

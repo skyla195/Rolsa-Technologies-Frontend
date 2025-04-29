@@ -1,0 +1,16 @@
+.view-bookings-container{
+    margin-top: 250px;
+
+    text-align: start;
+    margin-left: 50px;
+    
+    >h2, h1{
+        font-weight: 400;
+    }
+    .details-css{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        flex-direction: column;
+        text-align: start;
+    }
+}

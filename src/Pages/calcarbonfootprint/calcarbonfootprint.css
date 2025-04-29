@@ -1,0 +1,75 @@
+.page-titles {
+    margin-top: 250px;
+
+    font-size: clamp(20px, 4vw, 25px);
+
+    text-decoration: underline;
+
+    text-align: start;
+    margin-left: 45px;
+}
+
+#CCF-panoramic-image-div {
+    background-image: url("../../Assets/Images/CCF-image.jpg");
+    height: 250px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 95px;
+}
+
+#CCF-h1-div {
+    >h1 {
+        font-size: clamp(16px, 4vw, 23px);
+        font-weight: 500;
+        text-decoration: underline;
+        margin-top: 50px;
+    }
+}
+
+#CCF-questions-div {
+    margin-top: 90px;
+
+    .CCF-question {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+    >input {
+        width: 100%;
+        max-width: 400px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+
+    }
+    >#no-shadow{
+        box-shadow: none;
+    }
+
+
+}
+
+
+#CCF-button {
+    width: 100%;
+    max-width: 435px;
+    border: none;
+
+    margin-top: 100px;
+    height: 60px;
+    border-radius: 20px;
+
+    background-color: var(--yellow-color);
+    box-shadow: 0px 0px 15px var(--yellow-color);
+    font-size: clamp(16px, 3vw, 20px);
+}
+
+#results{
+    margin-top: 50px;
+
+    >h1, >p{
+        font-size: clamp(16px, 3vw, 20px);
+    }
+}

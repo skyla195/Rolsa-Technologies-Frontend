@@ -1,0 +1,11 @@
+.contact-us-info{
+
+    text-align: start;
+    margin-left: 40px;
+
+    margin-top: 65px;
+    font-size: clamp(12px, 3vw, 16px);
+    font-weight: 500;
+
+    width: fit-content;
+}
