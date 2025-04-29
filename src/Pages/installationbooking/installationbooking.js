@@ -56,7 +56,7 @@ export default function BookInstallation() {
 
         }
 
-        axios.post('http://127.0.0.1:8001/Auth/Booking-Installation', userinstallationData)
+        axios.post('https://rolsa-technologies-backend.onrender.com/Auth/Booking-Installation', userinstallationData)
         .then (response =>{
             setSuccess(JSON.stringify(response.data.message))
             setError("")

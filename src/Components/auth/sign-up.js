@@ -22,7 +22,7 @@ export default function Signup() {
             password
         };
 
-        axios.post('http://127.0.0.1:8001/Auth/Sign-up', userData)
+        axios.post('https://rolsa-technologies-backend.onrender.com/Auth/Sign-up', userData)
             .then (response => {
                 setSucess(response.data.message)
                 setError("")

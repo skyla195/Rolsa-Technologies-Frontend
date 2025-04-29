@@ -35,7 +35,7 @@ export default function BookConsultation() {
 
         }
         
-        axios.post('http://127.0.0.1:8001/Auth/Booking-Consultation', userconsultationData)
+        axios.post('https://rolsa-technologies-backend.onrender.com/Auth/Booking-Consultation', userconsultationData)
             .then (response =>{
                 setSuccess(response.data.message)
                 setError("")

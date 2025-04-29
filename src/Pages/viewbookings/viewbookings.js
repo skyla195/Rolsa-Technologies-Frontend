@@ -14,7 +14,7 @@ export default function ViewBookings() {
     useEffect(() => {
         const fetchBookings = async () => {
             try {
-                const response = await axios.post('http://127.0.0.1:8001/Auth/View-Booking-Details', {
+                const response = await axios.post('https://rolsa-technologies-backend.onrender.com/Auth/View-Booking-Details', {
                     email: user.email // Send the user's email in the request body
                 });
                 console.log(response.data); // Log the response data

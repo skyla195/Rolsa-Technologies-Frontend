@@ -13,7 +13,7 @@ export default function ViewEnergyUsages() {
     useEffect(() => {
         const fetchUsage = async () => {
             try {
-                const response = await axios.post('http://127.0.0.1:8001/Auth/View-Energy-Usage', {
+                const response = await axios.post('https://rolsa-technologies-backend.onrender.com/Auth/View-Energy-Usage', {
                     email: user.email  
                 });
                 console.log(response.data); 
