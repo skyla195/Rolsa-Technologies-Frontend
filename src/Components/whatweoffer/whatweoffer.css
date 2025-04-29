@@ -31,7 +31,6 @@
     font-size: clamp(16px, 4vw, 23px);
     margin-top: 50px;
     font-weight: 500;
-    border: 2px solid blue;
 }
 
 #product-card1 #row-1 {
@@ -41,18 +40,15 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 60px;
-    border: 2px solid green;
 }
 
 #product-card1 #row-1 img {
     width: 180px;
-    border: 2px solid purple;
 }
 
 #product-card1 #row-1 p {
     width: 530px;
     font-size: clamp(14px, 2vw, 18px);
-    border: 2px solid darkgrey;
 }
 
 /* --- Product Card 2 --- */
